@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Image Based Emotion Analysis</title>
+		<link
+			rel="stylesheet"
+			href="{{url_for('static',filename='css/index.css')}}"
+		/>
+		<link
+			rel="stylesheet"
+			href="{{url_for('static',filename='css/main.css')}}"
+		/>
+	</head>
+	<body>
+		<header>
+			<h1><a href="/">Image Based Emotion Analysis</a></h1>
+		</header>
+		<main class="HomeContainer">
+			<button><a href="/prediction">Prediction based on Image</a></button>
+			<button>
+				<a href="/live_prediction">Live Prediction based on video</a>
+			</button>
+		</main>
+	</body>
+	<script src="{{url_for('static',filename='js/index.js')}}"></script>
+</html>

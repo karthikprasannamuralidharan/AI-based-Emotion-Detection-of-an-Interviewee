@@ -1,0 +1,112 @@
+{
+    "image_data": {
+        "final_prediction": "surprise",
+        "counts": {
+            "anger": 0,
+            "disgust": 0,
+            "fear": 2,
+            "happy": 0,
+            "sad": 0,
+            "surprise": 12
+        },
+        "predictions": [
+            "surprise",
+            "fear",
+            "surprise",
+            "surprise",
+            "surprise",
+            "surprise",
+            "surprise"
+        ],
+        "min_prediction": "anger",
+        "neutrality_value": 14,
+        "total_predicted_values": 14
+    },
+    "audio_data": {
+        "final_prediction": "disgust",
+        "fluency_output": [
+            3386.9870160794153,
+            6575.000809190777,
+            1115.1155032482034,
+            1185.0287321171575,
+            884.3924868816503
+        ],
+        "counts": {
+            "anger": 0,
+            "disgust": 5,
+            "fear": 5,
+            "happy": 0,
+            "sad": 0,
+            "surprise": 0
+        },
+        "predictions": [
+            "disgust",
+            "fear",
+            "fear",
+            "fear",
+            "disgust",
+            "fear",
+            "fear",
+            "disgust",
+            "disgust",
+            "disgust"
+        ],
+        "min_prediction": "anger",
+        "neutrality_value": 5,
+        "total_predicted_values": 10
+    },
+    "text_data": {
+        "final_prediction": "happy",
+        "counts": {
+            "anger": 0,
+            "disgust": 0,
+            "fear": 0,
+            "happy": 15,
+            "sad": 0,
+            "surprise": 0
+        },
+        "predictions": [
+            "happy",
+            "happy",
+            "happy",
+            "happy",
+            "happy"
+        ],
+        "min_prediction": "anger",
+        "neutrality_value": 0,
+        "total_predicted_values": 15
+    },
+    "video_data": {
+        "final_prediction": "disgust",
+        "counts": {
+            "anger": 0,
+            "disgust": 1,
+            "fear": 1,
+            "happy": 0,
+            "sad": 0,
+            "surprise": 0
+        },
+        "predictions": [
+            "disgust",
+            "fear"
+        ],
+        "min_prediction": "anger",
+        "neutrality_value": 1,
+        "total_predicted_values": 2
+    },
+    "final_data": {
+        "final_prediction": "Higher Chance of Selection",
+        "counts": {
+            "anger": 0,
+            "disgust": 6,
+            "fear": 8,
+            "happy": 15,
+            "sad": 0,
+            "surprise": 12
+        },
+        "neutrality_value": 20,
+        "positivity_value": 27,
+        "negativity_value": 6,
+        "total_predicted_values": 41
+    }
+}

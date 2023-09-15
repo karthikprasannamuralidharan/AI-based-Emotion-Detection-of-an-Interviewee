@@ -1,0 +1,105 @@
+{
+    "image_data": {
+        "final_prediction": "surprise",
+        "counts": {
+            "anger": 0,
+            "disgust": 0,
+            "fear": 2,
+            "happy": 0,
+            "sad": 0,
+            "surprise": 4
+        },
+        "predictions": [
+            "surprise",
+            "fear",
+            "surprise"
+        ],
+        "min_prediction": "anger",
+        "neutrality_value": 6,
+        "total_predicted_values": 6
+    },
+    "audio_data": {
+        "final_prediction": "disgust",
+        "fluency_output": [
+            439.5654077067829,
+            168.3190180928253
+        ],
+        "counts": {
+            "anger": 0,
+            "disgust": 2,
+            "fear": 0,
+            "happy": 0,
+            "sad": 2,
+            "surprise": 0
+        },
+        "predictions": [
+            "disgust",
+            "sad",
+            "sad",
+            "disgust"
+        ],
+        "min_prediction": "anger",
+        "neutrality_value": 0,
+        "total_predicted_values": 4
+    },
+    "text_data": {
+        "final_prediction": "happy",
+        "counts": {
+            "anger": 0,
+            "disgust": 0,
+            "fear": 0,
+            "happy": 6,
+            "sad": 0,
+            "surprise": 0
+        },
+        "predictions": [
+            "happy",
+            "happy"
+        ],
+        "min_prediction": "anger",
+        "neutrality_value": 0,
+        "total_predicted_values": 6
+    },
+    "video_data": {
+        "final_prediction": "happy",
+        "counts": {
+            "anger": 0,
+            "disgust": 0,
+            "fear": 0,
+            "happy": 1,
+            "sad": 0,
+            "surprise": 0
+        },
+        "predictions": [
+            "happy"
+        ],
+        "min_prediction": "anger",
+        "neutrality_value": 0,
+        "total_predicted_values": 1
+    },
+    "final_data": {
+        "final_prediction": "Higher Chance of Selection",
+        "counts": {
+            "anger": 0,
+            "disgust": 2,
+            "fear": 2,
+            "happy": 7,
+            "sad": 2,
+            "surprise": 4
+        },
+        "neutrality_value": 6,
+        "positivity_value": 11,
+        "negativity_value": 2,
+        "total_predicted_values": 17
+    },
+    "behavior_mapping": {
+        "aggressive_ness": 2,
+        "calmness": 7,
+        "confidence": 5.0
+    },
+    "frequency": {
+        "total_sentences": 2,
+        "total_words": 2,
+        "speed_per_minute": 7.453416149068322
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "audio_data": {
+        "final_prediction": "fear",
+        "fluency_output": [
+            19616.369789323904,
+            23358.04112479742,
+            21751.619910653953,
+            7604.801467142377
+        ],
+        "counts": {
+            "anger": 1,
+            "disgust": 1,
+            "fear": 3,
+            "happy": 2,
+            "sad": 0,
+            "surprise": 0
+        },
+        "predictions": [
+            "disgust",
+            "anger",
+            "happy",
+            "happy",
+            "fear",
+            "fear",
+            "fear"
+        ],
+        "min_prediction": "sad",
+        "neutrality_value": 3,
+        "total_predicted_values": 7
+    },
+    "text_data": {
+        "final_prediction": "happy",
+        "counts": {
+            "anger": 0,
+            "disgust": 0,
+            "fear": 0,
+            "happy": 6,
+            "sad": 0,
+            "surprise": 0
+        },
+        "predictions": [
+            "happy",
+            "happy"
+        ],
+        "min_prediction": "anger",
+        "neutrality_value": 0,
+        "total_predicted_values": 6
+    }
+}

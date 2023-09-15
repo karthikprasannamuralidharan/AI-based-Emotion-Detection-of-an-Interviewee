@@ -1,0 +1,56 @@
+.landingPageImage {
+	min-height: 95vh;
+	background: url("../../../Assets/images/bg.jpg")
+		no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 30px;
+	color: white;
+	h1 {
+		margin-top: 10%;
+		max-width: 700px;
+		font-size: 50px;
+		color: #FF8300;
+		text-shadow: 2px 2px 2px #121212;
+		font-weight: bolder;
+	}
+	button {
+		margin: 30px 0;
+		font-size: 20px;
+		padding: 5px 50px;
+		background-color: #FF8300;
+		border-radius: 10px;
+		font-weight: bold;
+		color: black;
+	}
+	button:hover {
+		background-color: rgb(0, 155, 93);
+	}
+}
+
+#DashboardPageContainer {
+	.formsContainer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.recordVideoContainer {
+		background: #0d0332;
+		min-height: 30vh;
+		padding: 20px;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		ul {
+			li {
+				list-style: inside;
+			}
+		}
+		button {
+			background-color: coral;
+			padding: 10px 30px;
+			border-radius: 5px;
+		}
+	}
+}

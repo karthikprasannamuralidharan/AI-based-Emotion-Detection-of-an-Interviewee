@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Image Based Emotion Analysis</title>
+		<link
+			rel="stylesheet"
+			href="{{url_for('static',filename='css/index.css')}}"
+		/>
+		<link
+			rel="stylesheet"
+			href="{{url_for('static',filename='css/main.css')}}"
+		/>
+		<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+		<script src="https://cdn.jsdelivr.net/npm/react-apexcharts"></script>
+		<style>
+			body {
+				background: white;
+			}
+			.graphContainer {
+				padding: 20px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 10px;
+			}
+			.graphContainer div {
+				width: 75%;
+			}
+			.classLists{
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 255, 255, 0.349);
+			width: 100vw;
+			
+        }
+			span{
+				padding: 10px 10px;
+				border: 1px solid;
+				color: black;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1><a href="/">Image Based Emotion Analysis</a></h1>
+		</header>
+		<main>
+			<h1 style="text-align: center; margin: 30 px;color: black;">
+				Live Video Prediction
+			</h1>
+
+			<div class="graphContainer">
+				<div>
+					<canvas id="statistics_chart"></canvas>
+				</div>
+			</div>
+		</main>
+		<div class="classLists">
+			<span><strong> Indexing Information</strong></span>
+			<span>0 for 😡Anger</span><span>1 for 😞Disgust</span><span>2 for 😨Fear</span><span>3 for 😀Happy</span><span>4 for 😔Sad</span><span>5 for 😱Surprise</span>
+		</div>
+	</body>
+	<script src="{{url_for('static',filename='js/index.js')}}"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+	<script>
+		let statistics_chart = document.getElementById("statistics_chart");
+		let chart=new Chart(statistics_chart, {
+			type: "line",
+			data: {
+				labels: [0],
+				datasets: [
+					{
+						label: "Emotions",
+						data: [0],
+						borderWidth: 1,
+					},
+				],
+			},
+			options: {
+				scales: {
+					y: {
+						beginAtZero: true,
+					},
+				},
+			},
+		});
+		function addData(chart, label, values) {
+			label.forEach(element => {
+				chart.data.labels.push(element);
+			});
+			values.forEach(element => {
+				chart.data.datasets[0].data.push(element);
+			});
+			chart.update();
+		}
+		setInterval(() => {
+			getData()
+		}, 2000);
+		async function getData() {
+			try {
+				let response=await fetch("/get_live_prediction",{method:"POST"});
+				let result=await response.json()
+				console.log(result);
+				addData(chart,result.live_data2,result.live_data1)
+			} catch (error) {
+				
+			}
+		}
+		function startPrediction() {
+			fetch("/start_live_prediction",{method:"POST"}).then(()=>{
+				window.alert("recording is ended")
+			})
+		}
+		setTimeout(() => {
+			startPrediction()
+		}, 100);
+	</script>
+</html>

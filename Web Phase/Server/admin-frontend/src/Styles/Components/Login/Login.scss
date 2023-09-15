@@ -1,0 +1,68 @@
+#loginPageContainer {
+	min-height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	.centeredHeading {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 80%;
+		flex-direction: column;
+		h1 {
+			border: 1px solid white;
+			padding: 5px 20px;
+			border-radius: 10px;
+			margin: 20px;
+		}
+		p {
+			color: white;
+			max-width: 870%;
+			text-align: center;
+		}
+	}
+	.intro {
+		background-color: blue;
+		padding: 20px;
+		font-family: "Courier New", Courier, monospace;
+	}
+	.loginFormContainer {
+		min-height: 82vh;
+		margin: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+#Login_Form {
+	background: white;
+	min-height: 450px;
+	min-width: 350px;
+	@media screen and (max-width: 768px) {
+		min-width: 300px;
+	}
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border: 1px solid #006266;
+	h1 {
+		color: green;
+		margin: 20px;
+	}
+	input {
+		margin: 10px;
+		font-size: 15px;
+		padding: 10px;
+		width: 300px;
+		background-color: transparent;
+		border-bottom: 1px solid black;
+		color: black;
+	}
+	> button {
+		font-size: 25px;
+		padding: 5px 50px;
+		background-color: coral;
+		border-radius: 10px;
+		margin: 20px;
+	}
+}

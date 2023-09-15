@@ -1,0 +1,60 @@
+@import "./imports.scss";
+
+@media print {
+	header {
+		display: none;
+	}
+	footer {
+		display: none;
+	}
+	.printButton {
+		display: none;
+	}
+}
+
+.display_none {
+	display: none !important;
+}
+
+.display_flex {
+	display: flex !important;
+}
+
+.darkblue_color {
+	color: #130f40;
+}
+.gray_color {
+	color: gray;
+}
+.blue_color {
+	color: blue;
+}
+.red_color {
+	color: red;
+}
+.green_color {
+	color: green;
+}
+
+p {
+	color: black;
+}
+
+.centeredMainHeading {
+	text-align: center;
+	text-shadow: 2px 2px 2px blue;
+	font-weight: bolder;
+}
+
+.MessageContainer {
+	padding: 60px 20px;
+	display: flex;
+	border: 1px solid blue;
+	margin: 20px;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	h1 {
+		margin: 20px;
+	}
+}

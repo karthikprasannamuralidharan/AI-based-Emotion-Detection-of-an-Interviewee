@@ -1,0 +1,52 @@
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 5px;
+	flex-wrap: wrap;
+	background-color: #121212;
+	.header h1 a {
+		font-size: 1em;
+	}
+
+	.DesktopNav {
+		display: flex;
+		justify-content: space-evenly;
+		a {
+			margin: 5px 20px;
+			font-size: 1.2em;
+		}
+	}
+	button {
+		background-color: #FF8300;
+		border-radius: 5px;
+		padding: 5px 20px;
+		font-size: 1.2em;
+	}
+	.user {
+		background-color: #FF8300;
+		padding: 5px 10px;
+		border-radius: 5px;
+		position: relative;
+		cursor: pointer;
+		.name {
+			color: #130f40;
+		}
+		.options {
+			width: 100%;
+			position: absolute;
+			margin-left: -10px;
+			margin-top: 10px;
+			background: #F18;
+			border-radius: 5px;
+			a {
+				display: block;
+				padding: 5px 10px;
+				color: #4834d4;
+			}
+			a:hover {
+				background-color: aquamarine;
+			}
+		}
+	}
+}

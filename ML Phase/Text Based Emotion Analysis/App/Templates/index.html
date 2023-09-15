@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Text Based Emotion Analysis</title>
+		<link
+			rel="stylesheet"
+			href="{{url_for('static',filename='styles/Main.css')}}"
+		/>
+		<link
+			rel="stylesheet"
+			href="{{url_for('static',filename='styles/Home.css')}}"
+		/>
+		<script src="{{url_for('static',filename='scripts/index.js')}}"></script>
+		<script src="{{url_for('static',filename='scripts/main.js')}}"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Text Based Emotion Analysis</h1>
+		</header>
+		<aside>
+			<button class="optionButton" onclick="clearInput(event)">
+				Clear Input
+			</button>
+			<button class="optionButton" onclick="">
+				<label for="file"> Browse File </label>
+			</button>
+			<input
+				style="display: none"
+				type="file"
+				name="file"
+				id="file"
+				onchange="SubmitFile(event)"
+			/>
+			<button class="optionButton" onclick="filterTheScript(event)">
+				Filteration
+			</button>
+			<button class="optionButton" onclick="validateTheScript(event)">
+				Script Validation
+			</button>
+			<button class="optionButton" onclick="getTokens(event)">
+				Tokenization
+			</button>
+			<button class="optionButton" onclick="getStems(event)">
+				Lemmetization
+			</button>
+			<button class="optionButton" onclick="getPOSTags(event)">
+				P-O-S Tagging
+			</button>
+		</aside>
+		<article>
+			<ol>
+				<li>Only English Language is Allowed</li>
+				<li>Only Text file should be uploaded</li>
+				<li>Final answer will be depend on whole text</li>
+				<li>Every Sentence Will be checked independently</li>
+			</ol>
+		</article>
+		<main>
+			<div id="inputContainer">
+				<h4 style="color: white; font-size: 1.5em">
+					Enter Your Text below:
+				</h4>
+				<textarea
+					name="input"
+					id="input"
+					placeholder="Enter Any Text"
+				></textarea>
+			</div>
+			<button id="outputButton" onclick="getResult(event)">
+				Get Final Output
+			</button>
+			<div id="MainOutputContainer"></div>
+			<div id="FilterationSection"></div>
+			<div id="ValidationSection"></div>
+			<div id="TokenizationSection"></div>
+			<div id="LemmetizationSection"></div>
+			<div id="POSTaggingSection"></div>
+		</main>
+	</body>
+</html>

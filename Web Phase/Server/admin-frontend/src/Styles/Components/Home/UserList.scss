@@ -1,0 +1,56 @@
+.ListContainer {
+	//  width: 80%;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	h1 {
+		margin: 20px;
+	}
+	.List {
+		.element {
+			font-size: 0.8em;
+			display: flex;
+			.id {
+				width: 250px;
+				border: 1px solid gray;
+				padding: 5px;
+			}
+			.id2 {
+				width: 50px;
+				border: 1px solid gray;
+				padding: 5px;
+			}
+			.email,
+			.unique {
+				width: 250px;
+				border: 1px solid gray;
+				padding: 5px;
+			}
+			.name {
+				width: 150px;
+				border: 1px solid gray;
+				padding: 5px;
+			}
+			.phone,
+			.time {
+				width: 100px;
+				border: 1px solid gray;
+				padding: 5px;
+			}
+			.removeBtn {
+				width: 100px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 5px;
+				border: 1px solid gray;
+				button {
+					background: aqua;
+					padding: 2px 10px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,20 @@
+*.env
+/node_modules
+*.php
+__pycache__
+/Image Based Emotion Analysis/*/DefinedModel.h5
+/Image Based Emotion Analysis/*/*/DefinedModel.h5
+*.do
+/*/Data
+package-lock.json
+yarn.lock
+data_reference.txt
+
+Temporary_Storage
+TransferLearningModelInceptionV3.h5
+
+# Ignore large video files
+*.avi
+*.mp4
+Text_NN_Model_50.h5
+

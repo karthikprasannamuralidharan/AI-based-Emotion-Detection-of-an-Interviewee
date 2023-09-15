@@ -1,0 +1,131 @@
+{
+    "image_data": {
+        "final_prediction": "surprise",
+        "counts": {
+            "anger": 0,
+            "disgust": 0,
+            "fear": 0,
+            "happy": 0,
+            "sad": 0,
+            "surprise": 22
+        },
+        "predictions": [
+            "surprise",
+            "surprise",
+            "surprise",
+            "surprise",
+            "surprise",
+            "surprise",
+            "surprise",
+            "surprise",
+            "surprise",
+            "surprise",
+            "surprise"
+        ],
+        "min_prediction": "anger",
+        "neutrality_value": 22,
+        "total_predicted_values": 22
+    },
+    "audio_data": {
+        "final_prediction": "disgust",
+        "fluency_output": [
+            2819.769525983439,
+            2388.094673160509,
+            1528.5477145848995,
+            455.6253594767049,
+            452.19264313845724,
+            454.64323044558427,
+            3.0813670499170343
+        ],
+        "counts": {
+            "anger": 0,
+            "disgust": 8,
+            "fear": 3,
+            "happy": 0,
+            "sad": 2,
+            "surprise": 0
+        },
+        "predictions": [
+            "disgust",
+            "disgust",
+            "fear",
+            "disgust",
+            "disgust",
+            "sad",
+            "sad",
+            "fear",
+            "disgust",
+            "disgust",
+            "disgust",
+            "disgust",
+            "fear"
+        ],
+        "min_prediction": "anger",
+        "neutrality_value": 3,
+        "total_predicted_values": 13
+    },
+    "text_data": {
+        "final_prediction": "happy",
+        "counts": {
+            "anger": 3,
+            "disgust": 0,
+            "fear": 0,
+            "happy": 30,
+            "sad": 0,
+            "surprise": 3
+        },
+        "predictions": [
+            "happy",
+            "surprise",
+            "happy",
+            "happy",
+            "anger",
+            "happy",
+            "happy",
+            "happy",
+            "happy",
+            "happy",
+            "happy",
+            "happy"
+        ],
+        "min_prediction": "disgust",
+        "neutrality_value": 3,
+        "total_predicted_values": 36
+    },
+    "video_data": {
+        "final_prediction": "disgust",
+        "counts": {
+            "anger": 0,
+            "disgust": 3,
+            "fear": 1,
+            "happy": 0,
+            "sad": 1,
+            "surprise": 0
+        },
+        "predictions": [
+            "disgust",
+            "fear",
+            "disgust",
+            "sad",
+            "disgust"
+        ],
+        "min_prediction": "anger",
+        "neutrality_value": 1,
+        "total_predicted_values": 5
+    },
+    "final_data": {
+        "final_prediction": "Higher Chance of Selection",
+        "counts": {
+            "anger": 3,
+            "disgust": 11,
+            "fear": 4,
+            "happy": 30,
+            "sad": 3,
+            "surprise": 25
+        },
+        "neutrality_value": 29,
+        "positivity_value": 55,
+        "negativity_value": 14,
+        "total_predicted_values": 76
+    }
+}

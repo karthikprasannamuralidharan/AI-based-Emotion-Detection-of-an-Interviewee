@@ -1,0 +1,32 @@
+.TranscriptFormContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: black;
+	background-image: url("../../../Assets/images/bg.jpg");
+	background-size: cover;
+	form {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		textarea {
+			min-width: 700px;
+			min-height: 300px;
+			border: 5px solid #121212;
+			padding: 10px;
+		}
+		button {
+			margin: 10px;
+			padding: 5px 30px;
+			font-size: 20px;
+			background-color: #FF8300;
+			color: white;
+			border-radius: 5px;
+		}
+		button:hover {
+			background-color: #F18;
+		}
+	}
+}

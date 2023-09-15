@@ -1,0 +1,50 @@
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 10px 0;
+	flex-wrap: wrap;
+	background-color: #000000;
+	font-size: 0.75em;
+	.header h1 a {
+		font-size: 1.2em;
+	}
+
+	.DesktopNav {
+		display: flex;
+		justify-content: space-evenly;
+		a {
+			margin: 5px 20px;
+		}
+	}
+	button {
+		background: blue;
+		border-radius: 5px;
+		padding: 5px 20px;
+	}
+	.user {
+		background-color: aqua;
+		padding: 5px 10px;
+		border-radius: 5px;
+		position: relative;
+		cursor: pointer;
+		.name {
+			color: #130f40;
+		}
+		.options {
+			width: 100%;
+			position: absolute;
+			margin-left: -10px;
+			background: aqua;
+			border-radius: 10px;
+			a {
+				display: block;
+				padding: 5px 10px;
+				color: #4834d4;
+			}
+			a:hover {
+				background-color: aquamarine;
+			}
+		}
+	}
+}

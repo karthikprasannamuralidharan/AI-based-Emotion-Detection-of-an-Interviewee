@@ -1,0 +1,101 @@
+{
+    "image_data": {
+        "final_prediction": "fear",
+        "counts": {
+            "anger": 0,
+            "disgust": 0,
+            "fear": 10,
+            "happy": 2,
+            "sad": 0,
+            "surprise": 2
+        },
+        "predictions": [
+            "fear",
+            "surprise",
+            "fear",
+            "fear",
+            "happy",
+            "fear",
+            "fear"
+        ],
+        "min_prediction": "anger",
+        "neutrality_value": 12,
+        "total_predicted_values": 14
+    },
+    "audio_data": {
+        "final_prediction": "fear",
+        "fluency_output": [
+            8776.282509290215,
+            10106.775002016979,
+            2237.493742469611
+        ],
+        "counts": {
+            "anger": 0,
+            "disgust": 1,
+            "fear": 4,
+            "happy": 0,
+            "sad": 0,
+            "surprise": 0
+        },
+        "predictions": [
+            "disgust",
+            "fear",
+            "fear",
+            "fear",
+            "fear"
+        ],
+        "min_prediction": "anger",
+        "neutrality_value": 4,
+        "total_predicted_values": 5
+    },
+    "text_data": {
+        "final_prediction": "happy",
+        "counts": {
+            "anger": 0,
+            "disgust": 0,
+            "fear": 0,
+            "happy": 3,
+            "sad": 3,
+            "surprise": 0
+        },
+        "predictions": [
+            "sad",
+            "happy"
+        ],
+        "min_prediction": "anger",
+        "neutrality_value": 0,
+        "total_predicted_values": 6
+    },
+    "video_data": {
+        "final_prediction": "fear",
+        "counts": {
+            "anger": 0,
+            "disgust": 0,
+            "fear": 1,
+            "happy": 0,
+            "sad": 0,
+            "surprise": 0
+        },
+        "predictions": [
+            "fear"
+        ],
+        "min_prediction": "anger",
+        "neutrality_value": 1,
+        "total_predicted_values": 1
+    },
+    "final_data": {
+        "final_prediction": "Neutral Result",
+        "counts": {
+            "anger": 0,
+            "disgust": 1,
+            "fear": 15,
+            "happy": 5,
+            "sad": 3,
+            "surprise": 2
+        },
+        "neutrality_value": 17,
+        "positivity_value": 7,
+        "negativity_value": 1,
+        "total_predicted_values": 26
+    }
+}
